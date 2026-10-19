@@ -24,7 +24,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdro
 
 /* Hero */
 .hero{background:linear-gradient(180deg,#f3f8f5 0%,#ffffff 100%);color:var(--ink);padding:100px 0 110px;border-bottom:1px solid var(--line)}
-.hero-grid>div{max-width:780px}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
+.hero-logo img{width:100%;max-width:440px;height:auto;margin-left:auto}
 .hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.12;font-weight:800;letter-spacing:-.5px}
 .hero h1 span{color:var(--green)}
 .hero p{font-size:1.13rem;color:var(--muted);max-width:600px;margin:22px 0 34px}
@@ -102,6 +103,7 @@ footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.
   .menu-btn{display:block}
   .logo img{height:36px}
   .hero-grid,.about,.contact-box{grid-template-columns:1fr}
+  .hero-logo{display:none}
   .about .photo{max-width:220px}
   .row{grid-template-columns:1fr}
   form{padding:24px}
