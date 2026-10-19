@@ -6,121 +6,7 @@
 <title>Aristofanes AB – IT-konsult inom Excel, BI och CPQ</title>
 <meta name="description" content="Aristofanes är ett svenskt konsultbolag som hjälper företag att växa och effektivisera verksamheten genom smarta IT-tjänster: Excel, dataformatering, Business Intelligence, CPQ, hemsidor, IT-startpaket och AI.">
 <link rel="icon" type="image/png" href="img/favicon.png">
-<style>
-:root{
-  --green:#008037; --green-dark:#006b2e; --green-soft:#e8f4ec;
-  --black:#000000; --ink:#111111; --text:#222222; --muted:#5f6368;
-  --bg:#ffffff; --bg-soft:#f6f7f6; --line:#e4e6e4;
-  --radius:14px; --max:1140px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:inherit}
-img{max-width:100%;display:block}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-
-/* Header */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.logo img{height:44px;width:auto}
-.nav ul{display:flex;align-items:center;gap:30px;list-style:none}
-.nav ul a{text-decoration:none;font-size:.97rem;font-weight:500;color:var(--ink)}
-.nav ul a:hover{color:var(--green)}
-.nav .cta{background:var(--green);color:#fff;padding:10px 20px;border-radius:8px;font-weight:600}
-.nav .cta:hover{background:var(--green-dark);color:#fff}
-.menu-btn{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;color:var(--ink)}
-
-/* Hero */
-.hero{background:var(--black);color:#fff;padding:100px 0 110px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
-.hero h1{font-size:clamp(2.1rem,4.6vw,3.4rem);line-height:1.12;font-weight:800;letter-spacing:-.5px}
-.hero h1 span{color:#2bb15f}
-.hero p{font-size:1.13rem;color:rgba(255,255,255,.78);max-width:600px;margin:22px 0 34px}
-.btns{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-block;padding:14px 26px;border-radius:8px;font-weight:600;text-decoration:none;transition:transform .15s,background .2s}
-.btn:hover{transform:translateY(-2px)}
-.btn-primary{background:var(--green);color:#fff}
-.btn-primary:hover{background:var(--green-dark)}
-.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
-.mark{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;width:min(300px,100%);margin-left:auto}
-.mark i{aspect-ratio:1;background:#1c1c1c;border-radius:4px}
-.mark i.g{background:var(--green)}
-
-/* Sections */
-section{padding:92px 0}
-.eyebrow{color:var(--green);font-weight:700;font-size:.85rem;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
-h2{font-size:clamp(1.8rem,3.4vw,2.4rem);line-height:1.2;color:var(--ink);letter-spacing:-.3px;margin-bottom:14px}
-.lead{color:var(--muted);font-size:1.08rem;max-width:660px}
-
-/* Services */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;margin-top:46px}
-.card{border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;background:#fff;transition:transform .2s,box-shadow .2s,border-color .2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px -22px rgba(0,0,0,.35);border-color:var(--green)}
-.card img,.card svg.ic{width:72px;height:72px;object-fit:contain;margin-bottom:18px}
-.card h3{color:var(--ink);font-size:1.15rem;margin-bottom:8px}
-.card p{color:var(--muted);font-size:.95rem}
-
-/* Why */
-.why{background:var(--bg-soft)}
-.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:44px}
-.why-item{border-top:3px solid var(--green);padding-top:20px}
-.why-item h3{font-size:1.1rem;margin-bottom:8px;color:var(--ink)}
-.why-item p{color:var(--muted);font-size:.96rem}
-
-/* About */
-.about{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
-.about .photo img{border-radius:var(--radius);filter:grayscale(1)}
-.about .photo b{display:block;margin-top:14px;color:var(--ink)}
-.about .photo small{color:var(--muted)}
-.about p{color:var(--muted);margin-bottom:14px}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 26px}
-.chip{background:var(--green-soft);color:var(--green-dark);padding:6px 13px;border-radius:999px;font-size:.88rem;font-weight:500}
-.support{border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px}
-.support h3{color:var(--ink);font-size:1.05rem;margin-bottom:10px}
-.support ul{list-style:none;display:grid;gap:8px}
-.support li{display:flex;gap:10px;color:var(--muted)}
-.support li::before{content:"■";color:var(--green);font-size:.7rem;margin-top:5px}
-
-/* Contact */
-.contact{background:var(--black);color:#fff}
-.contact h2{color:#fff}
-.contact-box{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:start}
-.contact-info p{color:rgba(255,255,255,.75);margin-bottom:22px}
-.contact-info a{color:#fff;font-weight:600}
-form{display:grid;gap:16px;background:#fff;color:var(--text);padding:34px;border-radius:var(--radius)}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-label{font-size:.87rem;font-weight:600;color:var(--ink);display:block;margin-bottom:6px}
-input,select,textarea{width:100%;padding:12px 14px;border:1px solid #d6d9d6;border-radius:8px;font:inherit;background:#fff;color:var(--text);transition:border-color .2s,box-shadow .2s}
-input:focus,select:focus,textarea:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 3px rgba(0,128,55,.18)}
-textarea{min-height:130px;resize:vertical}
-button[type=submit]{background:var(--green);color:#fff;border:0;padding:14px;border-radius:8px;font:inherit;font-weight:600;cursor:pointer;transition:background .2s}
-button[type=submit]:hover{background:var(--green-dark)}
-.hp{position:absolute;left:-9999px}
-.note{font-size:.8rem;color:var(--muted)}
-
-/* Footer */
-footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.9rem;border-top:1px solid #222}
-.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
-.social{display:flex;gap:18px}
-.social a{text-decoration:none}
-.social a:hover{color:#fff}
-
-@media (max-width:860px){
-  .nav ul{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:#fff;padding:8px 20px 20px;border-bottom:1px solid var(--line)}
-  .nav ul.open{display:flex}
-  .nav ul li{padding:12px 0;width:100%}
-  .menu-btn{display:block}
-  .logo img{height:36px}
-  .hero-grid,.about,.contact-box{grid-template-columns:1fr}
-  .mark{display:none}
-  .about .photo{max-width:220px}
-  .row{grid-template-columns:1fr}
-  form{padding:24px}
-  section{padding:68px 0}
-  .hero{padding:72px 0 80px}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -130,7 +16,7 @@ footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.
     <button class="menu-btn" aria-label="Meny" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
     <ul id="menu">
       <li><a href="#tjanster">Tjänster</a></li>
-      <li><a href="#om">Om företaget</a></li>
+      <li><a href="om-mig.html">Om mig</a></li>
       <li><a href="#kontakt" class="cta">Kontakt</a></li>
     </ul>
   </div>
@@ -219,29 +105,16 @@ footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.
   </div>
 </section>
 
-<section id="om">
-  <div class="wrap about">
-    <div class="photo">
-      <img src="img/johan.jpg" alt="Johan, Aristofanes AB" width="300" height="300">
-      <b>Johan</b>
-      <small>Aristofanes AB</small>
-    </div>
-    <div>
-      <p class="eyebrow">Om företaget</p>
-      <h2>Effektivare affärssystem och bättre data</h2>
-      <p>Aristofanes har lång och gedigen kunskap och erfarenhet av att effektivisera affärssystem, vässa analysverktyg och att behandla affärs- och kunddata effektivt inom olika branscher.</p>
-      <p>Ett naturligt första steg är att gå igenom hur ni hanterar och formaterar er data idag. Därefter tar vi fram förslag på hur arbetet kan effektiviseras – för bättre administration, rimligare prissättning, ökad kundkännedom och starkare beslutsunderlag.</p>
-      <div class="chips">
-        <span class="chip">Excel</span><span class="chip">Power BI</span><span class="chip">Jet Reports</span><span class="chip">Business Central</span><span class="chip">AX 2012</span><span class="chip">Microsoft 365</span>
-      </div>
-      <div class="support">
-        <h3>Support</h3>
-        <ul>
-          <li>Vi kommer ut till er på plats</li>
-          <li>Ni skickar berörda filer till oss</li>
-          <li>Fjärranslutning via Windows Snabbhjälp, Microsoft Teams eller annat verktyg ni föredrar</li>
-        </ul>
-      </div>
+<section id="support">
+  <div class="wrap support-wrap">
+    <p class="eyebrow">Support</p>
+    <h2>Så går support till</h2>
+    <div class="support">
+      <ul>
+        <li>Vi kommer ut till er på plats</li>
+        <li>Ni skickar berörda filer till oss</li>
+        <li>Fjärranslutning via Windows Snabbhjälp, Microsoft Teams eller annat verktyg ni föredrar</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -252,7 +125,7 @@ footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.
       <p class="eyebrow">Kontakt</p>
       <h2>Låt oss prata</h2>
       <p>Berätta kort vad ni behöver hjälp med så återkommer vi så snart vi kan.</p>
-      <p>E-post<br><a href="mailto:johan.owre@aristofanes.eu">johan.owre@aristofanes.eu</a></p>
+      <p>E-post<br><a href="mailto:info@aristofanes.eu">info@aristofanes.eu</a></p>
     </div>
     <form action="https://formsubmit.co/johan.owre@aristofanes.eu" method="POST">
       <input type="hidden" name="_subject" value="Ny förfrågan från aristofanes.eu">

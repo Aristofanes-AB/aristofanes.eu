@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Om mig – Aristofanes AB</title>
+<meta name="description" content="Aristofanes är ett svenskt konsultbolag som hjälper företag att växa och effektivisera verksamheten genom smarta IT-tjänster: Excel, dataformatering, Business Intelligence, CPQ, hemsidor, IT-startpaket och AI.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="logo" aria-label="Aristofanes startsida"><img src="img/logo.png" alt="Aristofanes"></a>
+    <button class="menu-btn" aria-label="Meny" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="index.html#tjanster">Tjänster</a></li>
+      <li><a href="om-mig.html">Om mig</a></li>
+      <li><a href="index.html#kontakt" class="cta">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Om mig</p>
+    <h1>Om Aristofanes</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap about-page">
+    <div class="photo">
+      <img src="img/johan.jpg" alt="Johan, Aristofanes AB" width="300" height="300">
+      <b>Johan</b>
+      <small>Aristofanes AB</small>
+    </div>
+    <div>
+      <h2>Historia</h2>
+      <p>Aristofanes har lång och gedigen kunskap och erfarenhet av att effektivisera affärssystem, vässa analysverktyg och att behandla affärs- och kunddata effektivt inom olika branscher.</p>
+      <p>Vi arbetar med konsultstöd och utbildning som punktinsatser, eller med mer omfattande genomgångar av befintliga affärssystem och datastöd.</p>
+      <p>Exempel på branscher som vi har erfarenhet av är maskinentreprenad, lantbruk, växthusnäring, spillskydd och återvinning.</p>
+
+      <h2>Fokus</h2>
+      <p>Aristofanes fokus och främsta verktyg är Excel och den flexibilitet som denna applikation kan bidra med, förutsatt att man använder Excel på ett effektivt sätt och utnyttjar hela dess potential.</p>
+      <p>Ett naturligt och första steg för att förbättra affärssystem och analysverktyg inom en specifik bransch är att från grunden gå igenom den befintliga hanteringen och formateringen av de data som används. Därefter utarbetar vi förslag på hur arbetet kan effektiviseras och utvecklas, samt hur det gamla arbetssättet kan ske effektivare. Dessutom hur det kan ta ytterligare steg för att till exempel få en bättre administration, rimligare prissättning, ökad kundkännedom, strategiska underlag för mer offensiv marknadsföring och fler leads.</p>
+      <p>Exempel på effektivisering kan handla om att:</p>
+      <ul class="list">
+        <li>Spara tid</li>
+        <li>Undvika misstag och riskerna för fel beslut</li>
+        <li>Kunna analysera och visualisera data på ett användarvänligt sätt</li>
+        <li>Automatisera onödiga manuella processer</li>
+        <li>Skapa möjligheter till att formatera data för att kunna analysera, importera och utveckla affärssystem och kunddata</li>
+        <li>Business Intelligence, dvs att med utgångspunkt från befintliga data och fakta skapa stöd för att utveckla verksamhet och försäljning offensivt till nya marknader och/eller kundgrupper</li>
+      </ul>
+      <div class="btns" style="margin-top:28px"><a href="index.html#kontakt" class="btn btn-primary">Kontakta oss</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© Aristofanes AB</span>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/AristofanesAB" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
