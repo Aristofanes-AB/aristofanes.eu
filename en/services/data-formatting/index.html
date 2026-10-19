@@ -32,7 +32,10 @@
       <li><a href="../../about.html">About me</a></li>
       <li><a href="../../index.html#kontakt" class="cta">Contact</a></li>
     </ul>
-    <div class="lang-switch" aria-label="Språk / Language"><a href="../../../tjanster/dataformatering/index.html" hreflang="sv" lang="sv">SV</a><span aria-hidden="true">|</span><a href="index.html" hreflang="en" lang="en" aria-current="page">EN</a></div>
+    <details class="lang-dd">
+      <summary aria-label="Choose language"><svg class="globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span>English</span><span class="caret" aria-hidden="true">▾</span></summary>
+      <div class="lang-menu"><a href="../../../tjanster/dataformatering/index.html" hreflang="sv" lang="sv"><svg class="flag" width="22" height="15" viewBox="0 0 16 10" aria-hidden="true"><rect width="16" height="10" fill="#006AA7"/><rect x="5" width="2" height="10" fill="#FECC00"/><rect y="4" width="16" height="2" fill="#FECC00"/></svg><span>Svenska</span></a><a href="index.html" hreflang="en" lang="en" aria-current="page"><svg class="flag" width="22" height="15" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc1"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#gbc1)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>English</span></a></div>
+    </details>
   </div>
 </header>
 
@@ -82,6 +85,7 @@
 </footer>
 
 <script>
+document.addEventListener('click',e=>{const d=document.querySelector('.lang-dd');if(d&&d.open&&!d.contains(e.target))d.open=false;});
 document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
 </script>
 <script data-goatcounter="https://aristofanes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
