@@ -189,3 +189,5 @@ a.card:focus-visible{outline:3px solid var(--green);outline-offset:3px}
   .nav .sub a{padding:0}
   .caret{display:none}
 }
+
+.about-page .chips{margin:4px 0 0}
