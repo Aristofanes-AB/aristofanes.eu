@@ -133,3 +133,9 @@ footer{background:#0b0b0b;color:rgba(255,255,255,.65);padding:34px 0;font-size:.
 .about-page ul.list li::before{content:"■";color:var(--green);font-size:.7rem;margin-top:5px}
 .support-wrap{max-width:760px}
 @media (max-width:860px){.about-page{grid-template-columns:1fr}.about-page .photo{max-width:220px}.page-hero{padding:50px 0}}
+
+.support-info{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;margin-top:4px}
+.contact-info .support-title{color:#fff;font-weight:700;margin-bottom:10px}
+.support-info ul{list-style:none;display:grid;gap:8px}
+.support-info li{display:flex;gap:10px;color:rgba(255,255,255,.75);font-size:.95rem}
+.support-info li::before{content:"■";color:#2bb15f;font-size:.7rem;margin-top:5px}
