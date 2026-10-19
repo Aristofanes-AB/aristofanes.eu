@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apputveckling &amp; skräddarsydda program – Aristofanes AB</title>
+<meta name="description" content="Ibland finns det inget färdigt program som passar. Då bygger jag ett som gör det – webbappar och interna verktyg anpassade efter hur ni faktiskt arbetar.">
+<link rel="icon" type="image/png" href="../../img/favicon.png">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="../../index.html" class="logo" aria-label="Aristofanes startsida"><img src="../../img/logo.png" alt="Aristofanes"></a>
+    <button class="menu-btn" aria-label="Meny" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu">
+      <li><a href="../../index.html#tjanster">Tjänster</a></li>
+      <li><a href="../../om-mig.html">Om mig</a></li>
+      <li><a href="../../index.html#kontakt" class="cta">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap service-hero">
+    <div>
+      <p class="crumb"><a href="../../index.html#tjanster">Tjänster</a> / Apputveckling</p>
+      <h1>Apputveckling &amp; skräddarsydda program</h1>
+      <p class="intro">Ibland finns det inget färdigt program som passar. Då bygger jag ett som gör det – webbappar och interna verktyg anpassade efter hur ni faktiskt arbetar.</p>
+    </div>
+    <div class="service-icon"><svg class="ic" viewBox="0 0 72 72" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="8" y="12" width="56" height="44" rx="5" stroke="#000" stroke-width="4"/>
+          <path d="M8 22h56" stroke="#000" stroke-width="4"/>
+          <path d="M28 32l-7 7 7 7M44 32l7 7-7 7" stroke="#008037" stroke-width="4"/>
+          <path d="M38 30l-4 18" stroke="#000" stroke-width="3.5"/>
+        </svg></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap service-body">
+    <div>
+      <h2>Det här kan jag hjälpa till med</h2>
+      <ul class="list"><li>Webbappar och interna verktyg</li><li>Kalkylatorer, formulär och konfiguratorer</li><li>Kopplingar mot affärssystem och Microsoft 365</li><li>Snabba prototyper med vibe coding</li></ul>
+      <div class="result"><b>Resultat</b><p>Ni får verktyg som passar era arbetssätt i stället för tvärtom.</p></div>
+    </div>
+    <aside class="cta-card">
+      <h3>Vill du veta mer?</h3>
+      <p>Berätta kort vad ni behöver, så återkommer jag med ett förslag.</p>
+      <a href="../../index.html#kontakt" class="btn btn-primary">Kontakta mig</a>
+      <p class="mail">eller mejla <a href="mailto:info@aristofanes.eu">info@aristofanes.eu</a></p>
+    </aside>
+  </div>
+</section>
+
+<section class="other">
+  <div class="wrap">
+    <p class="eyebrow">Andra tjänster</p>
+    <div class="other-links"><a href="../excel-support/index.html">Excel-support</a><a href="../dataformatering/index.html">Dataformatering</a><a href="../ai-losningar/index.html">AI-lösningar</a><a href="../business-intelligence/index.html">Business Intelligence</a><a href="../maskinkonfiguration-cpq/index.html">Maskinkonfiguration (CPQ)</a><a href="../hemsida/index.html">Hemsida</a><a href="../it-startpaket/index.html">Startpaket IT-infrastruktur</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <span>© Aristofanes AB</span>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/AristofanesAB" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
