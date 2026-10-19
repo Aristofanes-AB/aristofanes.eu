@@ -15,7 +15,9 @@
     <a href="#top" class="logo" aria-label="Aristofanes startsida"><img src="img/logo.png" alt="Aristofanes"></a>
     <button class="menu-btn" aria-label="Meny" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
     <ul id="menu">
-      <li><a href="#tjanster">Tjänster</a></li>
+      <li class="has-sub"><a href="#tjanster">Tjänster <span class="caret" aria-hidden="true">▾</span></a>
+        <ul class="sub"><li><a href="tjanster/excel-support/index.html">Excel-support</a></li><li><a href="tjanster/dataformatering/index.html">Dataformatering</a></li><li><a href="tjanster/ai-losningar/index.html">AI-lösningar</a></li><li><a href="tjanster/business-intelligence/index.html">Business Intelligence</a></li><li><a href="tjanster/maskinkonfiguration-cpq/index.html">Maskinkonfiguration (CPQ)</a></li><li><a href="tjanster/hemsida/index.html">Hemsida</a></li><li><a href="tjanster/apputveckling/index.html">Apputveckling</a></li><li><a href="tjanster/it-startpaket/index.html">Startpaket IT-infrastruktur</a></li></ul>
+      </li>
       <li><a href="om-mig.html">Om mig</a></li>
       <li><a href="#kontakt" class="cta">Kontakt</a></li>
     </ul>
@@ -27,17 +29,21 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
+      <p class="tag">IT-konsult för små och medelstora företag</p>
       <h1>Smarta IT-tjänster som ger <span>verklig affärsnytta</span></h1>
-      <p>Vi är ett svenskt konsultbolag som hjälper företag att växa och effektivisera sin verksamhet. Vi kombinerar teknisk kompetens med fokus på affärsnytta.</p>
+      <p>Aristofanes hjälper företag att växa och arbeta smartare. Jag kombinerar teknisk kompetens med förståelse för hur verksamheten faktiskt fungerar – och du har alltid direktkontakt med mig.</p>
       <div class="btns">
-        <a href="#kontakt" class="btn btn-primary">Kontakta oss</a>
-        <a href="#tjanster" class="btn btn-ghost">Se våra tjänster</a>
+        <a href="#kontakt" class="btn btn-primary">Kontakta mig</a>
+        <a href="#tjanster" class="btn btn-ghost">Se tjänsterna</a>
       </div>
     </div>
-    <div class="mark" aria-hidden="true">
-      <i></i><i></i><i class="g"></i>
-      <i></i><i class="g"></i><i></i>
-      <i class="g"></i><i></i><i></i>
+    <div class="side">
+      <p class="p-title">Så arbetar jag</p>
+      <ol class="steps">
+          <li><b>Förstå</b><span>Jag sätter mig in i er verksamhet, era system och vad ni vill uppnå.</span></li>
+          <li><b>Bygga</b><span>Jag tar fram lösningen – en rapport, en app, en AI-tjänst eller en hemsida.</span></li>
+          <li><b>Stötta</b><span>Jag följer upp, utbildar och finns kvar när ni behöver hjälp.</span></li>
+        </ol>
     </div>
   </div>
 </section>
@@ -45,49 +51,67 @@
 <section id="tjanster">
   <div class="wrap">
     <p class="eyebrow">Tjänster</p>
-    <h2>Det här kan vi hjälpa er med</h2>
-    <p class="lead">Konsultstöd och utbildning som punktinsatser, eller mer omfattande genomgångar av befintliga affärssystem och datastöd.</p>
+    <h2>Det här kan jag hjälpa er med</h2>
+    <p class="lead">Från ett krånglande kalkylark till en egen app eller AI-lösning – jag hjälper er med enstaka insatser eller som långsiktig IT-partner.</p>
 
     <div class="grid">
-      <article class="card">
+      <a class="card" href="tjanster/excel-support/index.html">
         <img src="img/excel.png" alt="">
         <h3>Excel-support</h3>
-        <p>Vi effektiviserar era kalkylark så att ni sparar tid, slipper manuellt arbete och eliminerar risken för fel.</p>
-      </article>
-      <article class="card">
+        <p>Jag effektiviserar era kalkylark så att ni sparar tid, slipper manuellt arbete och eliminerar risken för fel.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/dataformatering/index.html">
         <img src="img/data.png" alt="">
         <h3>Dataformatering</h3>
-        <p>Vi förvandlar komplexa datamängder till strukturerad data som går att analysera, importera och använda i affärssystemet.</p>
-      </article>
-      <article class="card">
-        <img src="img/bi.png" alt="">
-        <h3>Business Intelligence</h3>
-        <p>Rapporter och visualiseringar utifrån ert affärssystem som ger underlag för att styra och utveckla verksamheten.</p>
-      </article>
-      <article class="card">
-        <img src="img/cpq.png" alt="">
-        <h3>Maskinkonfiguration (CPQ)</h3>
-        <p>Med erfarenhet från entreprenadbranschen säkrar vi prissättning och produktlogik – från ersättningsartiklar till frakt och lagerstatus.</p>
-      </article>
-      <article class="card">
-        <img src="img/hemsida.png" alt="">
-        <h3>Hemsida</h3>
-        <p>Moderna, snabba och enkla hemsidor som är billiga att driva och lätta att uppdatera – med er egen domän.</p>
-      </article>
-      <article class="card">
-        <img src="img/paket.png" alt="">
-        <h3>Startpaket IT-infrastruktur</h3>
-        <p>Domän, säkerhetscertifikat, hemsida och koppling till er e-post – uppsatt från dag ett till fast pris.</p>
-      </article>
-      <article class="card">
+        <p>Jag förvandlar komplexa datamängder till strukturerad data som går att analysera, importera och använda i affärssystemet.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/ai-losningar/index.html">
         <svg class="ic" viewBox="0 0 72 72" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <rect x="18" y="18" width="36" height="36" rx="5" stroke="#000" stroke-width="4"/>
           <path d="M28 10v8M36 10v8M44 10v8M28 54v8M36 54v8M44 54v8M10 28h8M10 36h8M10 44h8M54 28h8M54 36h8M54 44h8" stroke="#000" stroke-width="4"/>
           <path d="M29 44l5-16h4l5 16M31 38h10" stroke="#008037" stroke-width="3.5"/>
         </svg>
         <h3>AI-lösningar</h3>
-        <p>Vi hjälper er att använda AI där det gör nytta – till exempel i Microsoft 365, för rapporter och för att automatisera manuella moment.</p>
-      </article>
+        <p>Jag hjälper er att använda AI där det gör nytta – från Copilot i Microsoft 365 och automatisering till vibe coding.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/business-intelligence/index.html">
+        <img src="img/bi.png" alt="">
+        <h3>Business Intelligence</h3>
+        <p>Rapporter och visualiseringar utifrån ert affärssystem som ger underlag för att styra och utveckla verksamheten.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/maskinkonfiguration-cpq/index.html">
+        <img src="img/cpq.png" alt="">
+        <h3>Maskinkonfiguration (CPQ)</h3>
+        <p>Med erfarenhet från entreprenadbranschen säkrar jag prissättning och produktlogik – från ersättningsartiklar till frakt och lagerstatus.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/hemsida/index.html">
+        <img src="img/hemsida.png" alt="">
+        <h3>Hemsida</h3>
+        <p>Moderna, snabba och enkla hemsidor som är billiga att driva och lätta att uppdatera – med er egen domän.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/apputveckling/index.html">
+        <svg class="ic" viewBox="0 0 72 72" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="8" y="12" width="56" height="44" rx="5" stroke="#000" stroke-width="4"/>
+          <path d="M8 22h56" stroke="#000" stroke-width="4"/>
+          <path d="M28 32l-7 7 7 7M44 32l7 7-7 7" stroke="#008037" stroke-width="4"/>
+          <path d="M38 30l-4 18" stroke="#000" stroke-width="3.5"/>
+        </svg>
+        <h3>Apputveckling &amp; skräddarsydda program</h3>
+        <p>Jag bygger webbappar och interna verktyg som passar era arbetssätt – från enkla kalkylatorer och formulär till kopplingar mot ert affärssystem.</p>
+        <span class="more">Läs mer →</span>
+      </a>
+      <a class="card" href="tjanster/it-startpaket/index.html">
+        <img src="img/paket.png" alt="">
+        <h3>Startpaket IT-infrastruktur</h3>
+        <p>Domän, säkerhetscertifikat, hemsida och koppling till er e-post – uppsatt från dag ett till fast pris.</p>
+        <span class="more">Läs mer →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -95,26 +119,12 @@
 <section class="why">
   <div class="wrap">
     <p class="eyebrow">Varför Aristofanes</p>
-    <h2>Vi talar samma språk som du</h2>
-    <p class="lead">Erfarenhet från branscher som maskinentreprenad, lantbruk, växthusnäring, spillskydd och återvinning.</p>
+    <h2>Samma språk</h2>
+    <p class="lead">Jag har arbetat med affärssystem och data i branscher som maskinentreprenad, lantbruk, växthusnäring, spillskydd och återvinning – och följer samtidigt utvecklingen inom AI och moderna verktyg.</p>
     <div class="why-grid">
-      <div class="why-item"><h3>Specialister på din vardag</h3><p>Med bakgrund inom maskinindustri och teknik förstår vi dina specifika utmaningar.</p></div>
-      <div class="why-item"><h3>Vi tar de tekniska detaljerna</h3><p>Ni slipper agera mellanhand i de tekniska frågorna och kan fokusera på er kärnverksamhet.</p></div>
-      <div class="why-item"><h3>Fokus på enkelhet</h3><p>Användarvänliga lösningar som är enkla att underhålla och inte adderar ny komplexitet.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="support">
-  <div class="wrap support-wrap">
-    <p class="eyebrow">Support</p>
-    <h2>Så går support till</h2>
-    <div class="support">
-      <ul>
-        <li>Vi kommer ut till er på plats</li>
-        <li>Ni skickar berörda filer till oss</li>
-        <li>Fjärranslutning via Windows Snabbhjälp, Microsoft Teams eller annat verktyg ni föredrar</li>
-      </ul>
+      <div class="why-item"><h3>Erfarenhet från vardagen</h3><p>Jag har själv arbetat med affärssystem och rapporter i det dagliga arbetet, och utgår alltid från hur de används i praktiken.</p></div>
+      <div class="why-item"><h3>En kontakt – hela vägen</h3><p>Du pratar direkt med den som gör jobbet, och slipper agera mellanhand i tekniska frågor.</p></div>
+      <div class="why-item"><h3>Enkla lösningar som håller</h3><p>Användarvänligt, lätt att underhålla och utan onödig komplexitet.</p></div>
     </div>
   </div>
 </section>
@@ -123,9 +133,17 @@
   <div class="wrap contact-box">
     <div class="contact-info">
       <p class="eyebrow">Kontakt</p>
-      <h2>Låt oss prata</h2>
-      <p>Berätta kort vad ni behöver hjälp med så återkommer vi så snart vi kan.</p>
+      <h2>Hör av dig</h2>
+      <p>Berätta kort vad ni behöver hjälp med så återkommer jag så snart jag kan.</p>
       <p>E-post<br><a href="mailto:info@aristofanes.eu">info@aristofanes.eu</a></p>
+      <div class="support-info">
+        <p class="support-title">Support</p>
+        <ul>
+          <li>Jag kommer ut till er på plats</li>
+          <li>Ni skickar berörda filer till mig</li>
+          <li>Fjärranslutning via Windows Snabbhjälp eller Microsoft Teams</li>
+        </ul>
+      </div>
     </div>
     <form action="https://formsubmit.co/johan.owre@aristofanes.eu" method="POST">
       <input type="hidden" name="_subject" value="Ny förfrågan från aristofanes.eu">
@@ -144,10 +162,11 @@
         <select id="tjanst" name="Tjänst">
           <option>Excel-support</option>
           <option>Dataformatering</option>
+          <option>AI-lösningar</option>
           <option>Business Intelligence</option>
           <option>Maskinkonfiguration (CPQ)</option>
           <option>Hemsida / IT-startpaket</option>
-          <option>AI-lösningar</option>
+          <option>Apputveckling / program</option>
           <option>Annat</option>
         </select>
       </div>
@@ -165,7 +184,6 @@
     <span>© Aristofanes AB</span>
     <div class="social">
       <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.facebook.com/AristofanesAB" target="_blank" rel="noopener">Facebook</a>
     </div>
   </div>
 </footer>

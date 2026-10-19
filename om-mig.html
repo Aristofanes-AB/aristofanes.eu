@@ -15,7 +15,9 @@
     <a href="index.html" class="logo" aria-label="Aristofanes startsida"><img src="img/logo.png" alt="Aristofanes"></a>
     <button class="menu-btn" aria-label="Meny" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
     <ul id="menu">
-      <li><a href="index.html#tjanster">Tjänster</a></li>
+      <li class="has-sub"><a href="index.html#tjanster">Tjänster <span class="caret" aria-hidden="true">▾</span></a>
+        <ul class="sub"><li><a href="tjanster/excel-support/index.html">Excel-support</a></li><li><a href="tjanster/dataformatering/index.html">Dataformatering</a></li><li><a href="tjanster/ai-losningar/index.html">AI-lösningar</a></li><li><a href="tjanster/business-intelligence/index.html">Business Intelligence</a></li><li><a href="tjanster/maskinkonfiguration-cpq/index.html">Maskinkonfiguration (CPQ)</a></li><li><a href="tjanster/hemsida/index.html">Hemsida</a></li><li><a href="tjanster/apputveckling/index.html">Apputveckling</a></li><li><a href="tjanster/it-startpaket/index.html">Startpaket IT-infrastruktur</a></li></ul>
+      </li>
       <li><a href="om-mig.html">Om mig</a></li>
       <li><a href="index.html#kontakt" class="cta">Kontakt</a></li>
     </ul>
@@ -33,29 +35,28 @@
 <section>
   <div class="wrap about-page">
     <div class="photo">
-      <img src="img/johan.jpg" alt="Johan, Aristofanes AB" width="300" height="300">
-      <b>Johan</b>
-      <small>Aristofanes AB</small>
+      <img src="img/johan.jpg" alt="Johan Öwre, Aristofanes AB" width="300" height="300">
+      <b>Johan Öwre</b>
+      <small>IT-konsult och grundare av Aristofanes AB</small>
     </div>
     <div>
-      <h2>Historia</h2>
-      <p>Aristofanes har lång och gedigen kunskap och erfarenhet av att effektivisera affärssystem, vässa analysverktyg och att behandla affärs- och kunddata effektivt inom olika branscher.</p>
-      <p>Vi arbetar med konsultstöd och utbildning som punktinsatser, eller med mer omfattande genomgångar av befintliga affärssystem och datastöd.</p>
-      <p>Exempel på branscher som vi har erfarenhet av är maskinentreprenad, lantbruk, växthusnäring, spillskydd och återvinning.</p>
+      <h2>Bakgrund</h2>
+      <p>Jag har arbetat professionellt med IT i sju år – men intresset har funnits med hela livet. Under åren har jag haft roller som ansvarig för hemsida, CTO, projektledare, IT-konsult och arbetat med Business Intelligence.</p>
+      <p>Den bredden har gett mig förståelse för både tekniken och verksamheten, och för hur affärssystem, rapporter och verktyg används i vardagen.</p>
 
-      <h2>Fokus</h2>
-      <p>Aristofanes fokus och främsta verktyg är Excel och den flexibilitet som denna applikation kan bidra med, förutsatt att man använder Excel på ett effektivt sätt och utnyttjar hela dess potential.</p>
-      <p>Ett naturligt och första steg för att förbättra affärssystem och analysverktyg inom en specifik bransch är att från grunden gå igenom den befintliga hanteringen och formateringen av de data som används. Därefter utarbetar vi förslag på hur arbetet kan effektiviseras och utvecklas, samt hur det gamla arbetssättet kan ske effektivare. Dessutom hur det kan ta ytterligare steg för att till exempel få en bättre administration, rimligare prissättning, ökad kundkännedom, strategiska underlag för mer offensiv marknadsföring och fler leads.</p>
-      <p>Exempel på effektivisering kan handla om att:</p>
+      <h2>Erfarenhet</h2>
+      <p>Jag har arbetat med affärssystem och data i branscher som maskinentreprenad, lantbruk, växthusnäring, spillskydd och återvinning.</p>
+      <div class="tools"><div class="tool-row"><span class="tool-label">Affärssystem</span><span class="tool-list">Business Central · AX 2012 · Fortnox</span></div><div class="tool-row"><span class="tool-label">CRM</span><span class="tool-list">HubSpot</span></div><div class="tool-row"><span class="tool-label">Rapporter &amp; data</span><span class="tool-list">Excel · Power BI · Jet Reports · Atlas</span></div><div class="tool-row"><span class="tool-label">AI &amp; utveckling</span><span class="tool-list">Claude · Gemini · Lovable · Visual Studio Code · GitHub</span></div><div class="tool-row"><span class="tool-label">Kontor</span><span class="tool-list">Microsoft 365 · Google Workspace</span></div></div>
+
+      <h2>Så hjälper jag dig</h2>
+      <p>Ofta börjar det med en genomgång av hur ni arbetar och hanterar er data i dag. Därefter tar jag fram förslag och lösningar – allt från ett smartare kalkylark eller en rapport till en egen app eller AI-lösning. Målet är alltid detsamma:</p>
       <ul class="list">
-        <li>Spara tid</li>
-        <li>Undvika misstag och riskerna för fel beslut</li>
-        <li>Kunna analysera och visualisera data på ett användarvänligt sätt</li>
-        <li>Automatisera onödiga manuella processer</li>
-        <li>Skapa möjligheter till att formatera data för att kunna analysera, importera och utveckla affärssystem och kunddata</li>
-        <li>Business Intelligence, dvs att med utgångspunkt från befintliga data och fakta skapa stöd för att utveckla verksamhet och försäljning offensivt till nya marknader och/eller kundgrupper</li>
+        <li>Spara tid och automatisera onödiga manuella moment</li>
+        <li>Undvika misstag och fel beslut</li>
+        <li>Göra data lätt att analysera och visualisera</li>
+        <li>Ge bättre underlag för prissättning, försäljning och strategi</li>
       </ul>
-      <div class="btns" style="margin-top:28px"><a href="index.html#kontakt" class="btn btn-primary">Kontakta oss</a></div>
+      <div class="btns" style="margin-top:28px"><a href="index.html#kontakt" class="btn btn-primary">Kontakta mig</a></div>
     </div>
   </div>
 </section>
@@ -66,7 +67,6 @@
     <span>© Aristofanes AB</span>
     <div class="social">
       <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://www.facebook.com/AristofanesAB" target="_blank" rel="noopener">Facebook</a>
     </div>
   </div>
 </footer>
