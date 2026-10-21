@@ -5,26 +5,38 @@
   var lang = document.documentElement.lang === 'en' ? 'EN' : 'SV';
   var queue = [];
 
-  function send(name) {
-    var path = lang + ' · ' + name;
+  function deliver(item) {
     var gc = window.goatcounter;
     if (gc && gc.count) {
-      try { gc.count({ path: path, title: path, event: true }); } catch (e) {}
-    } else {
-      queue.push(path);
+      try { gc.count(item); } catch (e) {}
+      return true;
     }
+    return false;
   }
 
-  // Skicka det som räknats innan GoatCounter hunnit laddas
+  function push(item) {
+    queue.push(item);
+    if (window.goatcounter && window.goatcounter.count) queue.splice(0).forEach(deliver);
+  }
+
+  // Händelse (klick, visad del, formulär)
+  function send(name) {
+    var path = lang + ' · ' + name;
+    push({ path: path, title: path, event: true });
+  }
+
+  // Sidvisning med läsbart namn, t.ex. "SV · Startsida"
+  var meta = document.querySelector('meta[name="gc-page"]');
+  var pageName = lang + ' · ' + (meta ? meta.getAttribute('content') : (location.pathname || '/'));
+  push({ path: pageName, title: document.title, event: false });
+
+  // Skicka det som väntat på att GoatCounter ska laddas
   var tries = 0;
   var timer = setInterval(function () {
-    var gc = window.goatcounter;
     tries++;
-    if (gc && gc.count) {
+    if (window.goatcounter && window.goatcounter.count) {
       clearInterval(timer);
-      queue.splice(0).forEach(function (p) {
-        try { gc.count({ path: p, title: p, event: true }); } catch (e) {}
-      });
+      queue.splice(0).forEach(deliver);
     } else if (tries > 30) {
       clearInterval(timer);
     }
