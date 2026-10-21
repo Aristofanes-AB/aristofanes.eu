@@ -30,11 +30,11 @@
         <ul class="sub"><li><a href="../../tjanster/excel-support/index.html">Excel-support</a></li><li><a href="../../tjanster/dataformatering/index.html">Dataformatering</a></li><li><a href="../../tjanster/ai-losningar/index.html">AI-lösningar</a></li><li><a href="../../tjanster/business-intelligence/index.html">Business Intelligence</a></li><li><a href="../../tjanster/maskinkonfiguration-cpq/index.html">Maskinkonfiguration (CPQ)</a></li><li><a href="../../tjanster/hemsida/index.html">Hemsida</a></li><li><a href="../../tjanster/apputveckling/index.html">Apputveckling</a></li><li><a href="../../tjanster/it-startpaket/index.html">Startpaket IT-infrastruktur</a></li></ul>
       </li>
       <li><a href="../../om-mig.html">Om mig</a></li>
-      <li><a href="../../index.html#kontakt" class="cta">Kontakt</a></li>
+      <li><a href="../../index.html#kontakt" class="cta" data-gc="Kontakt (meny)">Kontakt</a></li>
     </ul>
     <details class="lang-dd">
       <summary aria-label="Välj språk"><svg class="globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg><span>Svenska</span><span class="caret" aria-hidden="true">▾</span></summary>
-      <div class="lang-menu"><a href="index.html" hreflang="sv" lang="sv" aria-current="page"><svg class="flag" width="22" height="15" viewBox="0 0 16 10" aria-hidden="true"><rect width="16" height="10" fill="#006AA7"/><rect x="5" width="2" height="10" fill="#FECC00"/><rect y="4" width="16" height="2" fill="#FECC00"/></svg><span>Svenska</span></a><a href="../../en/services/business-intelligence/index.html" hreflang="en" lang="en"><svg class="flag" width="22" height="15" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc1"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#gbc1)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>English</span></a></div>
+      <div class="lang-menu"><a href="index.html" hreflang="sv" lang="sv" aria-current="page"><svg class="flag" width="22" height="15" viewBox="0 0 16 10" aria-hidden="true"><rect width="16" height="10" fill="#006AA7"/><rect x="5" width="2" height="10" fill="#FECC00"/><rect y="4" width="16" height="2" fill="#FECC00"/></svg><span>Svenska</span></a><a href="../../en/services/business-intelligence/index.html" hreflang="en" lang="en" data-gc="Byt språk till English"><svg class="flag" width="22" height="15" viewBox="0 0 60 30" aria-hidden="true"><clipPath id="gbc1"><path d="M0 0v30h60V0z"/></clipPath><g clip-path="url(#gbc1)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg><span>English</span></a></div>
     </details>
   </div>
 </header>
@@ -61,8 +61,8 @@
     <aside class="cta-card">
       <h3>Vill du veta mer?</h3>
       <p>Berätta kort vad ni behöver, så återkommer jag med ett förslag.</p>
-      <a href="../../index.html#kontakt" class="btn btn-primary">Kontakta mig</a>
-      <p class="mail">eller mejla <a href="mailto:info@aristofanes.eu">info@aristofanes.eu</a></p>
+      <a href="../../index.html#kontakt" class="btn btn-primary" data-gc="Kontakta mig (tjänst: business-intelligence)">Kontakta mig</a>
+      <p class="mail">eller mejla <a href="mailto:info@aristofanes.eu" data-gc="E-post">info@aristofanes.eu</a></p>
     </aside>
   </div>
 </section>
@@ -79,7 +79,7 @@
   <div class="wrap foot">
     <span>© Aristofanes AB · Malmö, Skåne</span>
     <div class="social">
-      <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/company/aristofanes/" target="_blank" rel="noopener" data-gc="LinkedIn">LinkedIn</a>
     </div>
   </div>
 </footer>
@@ -88,6 +88,7 @@
 document.addEventListener('click',e=>{const d=document.querySelector('.lang-dd');if(d&&d.open&&!d.contains(e.target))d.open=false;});
 document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
 </script>
+<script src="../../stats.js?v=1" defer></script>
 <script data-goatcounter="https://aristofanes.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
